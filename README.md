@@ -4,13 +4,13 @@
 
 1. Start by creating a resource group to hold your network resources.
 
-```sql
+```js
 az group create --name myResourceGroup --location eastus
 ```
 
 2. Create a virtual network: Use the following command to create a virtual network with a subnet:
 
-```sql
+```js
 az network vnet create \
   --resource-group myResourceGroup \
   --name myVirtualNetwork \
@@ -21,7 +21,7 @@ az network vnet create \
 
 3. Create a network security group: Use the following command to create a network security group:
 
-```sql
+```js
 az network nsg create \
   --resource-group myResourceGroup \
   --name myNetworkSecurityGroup
@@ -29,7 +29,7 @@ az network nsg create \
 
 4. Create a network security rule: Use the following command to create a network security rule:
 
-```sql
+```js
 az network nsg rule create \
   --resource-group myResourceGroup \
   --nsg-name myNetworkSecurityGroup \
@@ -46,7 +46,7 @@ az network nsg rule create \
 
 5. Create a public IP address: Use the following command to create a public IP address:
 
-```sql
+```js
 az network public-ip create \
   --resource-group myResourceGroup \
   --name myPublicIPAddress \
@@ -56,7 +56,7 @@ az network public-ip create \
 
 6. Create a virtual network gateway: Use the following command to create a virtual network gateway:
 
-```sql
+```js
 az network vnet-gateway create \
   --name myVirtualNetworkGateway \
   --public-ip-address myPublicIPAddress \
@@ -70,7 +70,7 @@ az network vnet-gateway create \
 
 7. Create a virtual network gateway connection: Use the following comand to create a virtual network gateway connection: 
 
-```sql
+```js
 az network vpn-connection create \
   --name myVpnConnection \
   --resource-group myResourceGroup \
