@@ -1,4 +1,4 @@
-# Secure Network using encryption on Azure using Azure CLI
+# Secure Network using encryption with Azure CLI
 
 # Create a resource group:
 
