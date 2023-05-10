@@ -6,7 +6,7 @@
 
 ```sql
 az group create --name myResourceGroup --location eastus
-
+```
 
 2. Create a virtual network: Use the following command to create a virtual network with a subnet:
 
@@ -17,7 +17,7 @@ az network vnet create \
   --address-prefix 10.0.0.0/16 \
   --subnet-name mySubnet \
   --subnet-prefix 10.0.1.0/24
-
+```
 
 3. Create a network security group: Use the following command to create a network security group:
 
@@ -25,7 +25,7 @@ az network vnet create \
 az network nsg create \
   --resource-group myResourceGroup \
   --name myNetworkSecurityGroup
-
+```
 
 4. Create a network security rule: Use the following command to create a network security rule:
 
@@ -42,7 +42,7 @@ az network nsg rule create \
   --destination-port-range 3389 \
   --access allow \
   --priority 1000
-
+```
 
 5. Create a public IP address: Use the following command to create a public IP address:
 
@@ -52,7 +52,7 @@ az network public-ip create \
   --name myPublicIPAddress \
   --sku Standard \
   --allocation-method Dynamic
-
+```
 
 6. Create a virtual network gateway: Use the following command to create a virtual network gateway:
 
@@ -66,7 +66,7 @@ az network vnet-gateway create \
   --vpn-type RouteBased \
   --sku VpnGw1 \
   --no-wait
-
+```
 
 7. Create a virtual network gateway connection: Use the following comand to create a virtual network gateway connection: 
 
@@ -78,7 +78,7 @@ az network vpn-connection create \
   --shared-key mySharedKey \
   --enable-bgp false \
   --location eastus
-
+```
 
 8. Monitor and manage: Use the Azure portal or the Azure CLI to monitor and manage your Azure resources.
 
