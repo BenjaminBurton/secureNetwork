@@ -1,6 +1,6 @@
 # Secure Network using encryption with Azure CLI
 
-# Create a resource group:
+### Create a resource group:
 
 1. Start by creating a resource group to hold your network resources.
 
