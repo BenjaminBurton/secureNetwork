@@ -17,7 +17,7 @@ az network vnet create \
   --address-prefix 10.0.0.0/16 \
   --subnet-name mySubnet \
   --subnet-prefix 10.0.1.0/24
-```
+
 
 3. Create a network security group: Use the following command to create a network security group:
 
